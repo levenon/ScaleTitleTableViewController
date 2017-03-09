@@ -1,30 +1,30 @@
 //
-//  YRSegmentSelectorView.m
-//  pyyx
+//  STSegmentSelectorView.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
+//  Created by Marke Jave on 2017/1/3.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSegmentSelectorView.h"
-#import "YRSegmentSelectorItemCell.h"
-#import "YRSegmentCollectionSelectorView.h"
-#import "YRSegmentCollectionItemCell.h"
+#import "STSegmentSelectorView.h"
+#import "STSegmentSelectorItemCell.h"
+#import "STSegmentCollectionSelectorView.h"
+#import "STSegmentCollectionItemCell.h"
 #import <Masonry/Masonry.h>
 
-@interface YRSegmentSelectorView ()<MMHorizontalListViewDelegate, MMHorizontalListViewDataSource, YRSegmentCollectionSelectorViewDelegate, YRSegmentCollectionSelectorViewDataSource>
+@interface STSegmentSelectorView ()<MMHorizontalListViewDelegate, MMHorizontalListViewDataSource, STSegmentCollectionSelectorViewDelegate, STSegmentCollectionSelectorViewDataSource>
 
 @property (nonatomic, strong) UIView *contentView;
 
 @property (nonatomic, strong) MMHorizontalListView *horizontalListView;
 
-@property (nonatomic, strong) YRSegmentCollectionSelectorView *expendSelectorView;
+@property (nonatomic, strong) STSegmentCollectionSelectorView *expendSelectorView;
 
 @property (nonatomic, strong) UIButton *expendButton;
 
 @end
 
-@implementation YRSegmentSelectorView
+@implementation STSegmentSelectorView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {
@@ -89,16 +89,16 @@
     }
 }
 
-- (YRSegmentCollectionSelectorView *)newSegmentCollectionSelectorView{
+- (STSegmentCollectionSelectorView *)newSegmentCollectionSelectorView{
     NSInteger column = 3 + (CGRectGetWidth([[UIScreen mainScreen] bounds]) > 320);
     CGFloat itemWidth = (CGRectGetWidth([self bounds]) - 32 - (column - 1) * 6 ) / column;
     
-    YRSegmentCollectionSelectorView *segmentCollectionSelectorView = [[YRSegmentCollectionSelectorView alloc] initWithSelectedIndex:[self selectedIndex]];
+    STSegmentCollectionSelectorView *segmentCollectionSelectorView = [[STSegmentCollectionSelectorView alloc] initWithSelectedIndex:[self selectedIndex]];
     segmentCollectionSelectorView.alpha = 0.f;
     segmentCollectionSelectorView.delegate = self;
     segmentCollectionSelectorView.dataSource = self;
     segmentCollectionSelectorView.expendItemSize = CGSizeMake(itemWidth, 41);
-    [segmentCollectionSelectorView registerClass:[YRSegmentCollectionItemCell class] forCellWithReuseIdentifier:NSStringFromClass([YRSegmentCollectionItemCell class])];
+    [segmentCollectionSelectorView registerClass:[STSegmentCollectionItemCell class] forCellWithReuseIdentifier:NSStringFromClass([STSegmentCollectionItemCell class])];
     
     return segmentCollectionSelectorView;
 }
@@ -218,13 +218,13 @@
 }
 
 - (CGFloat)MMHorizontalListView:(MMHorizontalListView *)horizontalListView widthForCellAtIndex:(NSInteger)index;{
-    return [YRSegmentSelectorItemCell horizontalListView:horizontalListView widthWithTitle:[self titleAtIndex:index]];
+    return [STSegmentSelectorItemCell horizontalListView:horizontalListView widthWithTitle:[self titleAtIndex:index]];
 }
 
 - (MMHorizontalListViewCell *)MMHorizontalListView:(MMHorizontalListView *)horizontalListView cellAtIndex:(NSInteger)index;{
-    YRSegmentSelectorItemCell *cell = (YRSegmentSelectorItemCell *)[horizontalListView dequeueCellWithReusableIdentifier:NSStringFromClass([YRSegmentSelectorItemCell class])];
+    STSegmentSelectorItemCell *cell = (STSegmentSelectorItemCell *)[horizontalListView dequeueCellWithReusableIdentifier:NSStringFromClass([STSegmentSelectorItemCell class])];
     if (!cell) {
-        cell = [[YRSegmentSelectorItemCell alloc] initWithFrame:CGRectMake(0, 0, 0, 21)];
+        cell = [[STSegmentSelectorItemCell alloc] initWithFrame:CGRectMake(0, 0, 0, 21)];
     }
     cell.title = [self titleAtIndex:index];
     
@@ -235,24 +235,24 @@
     [self didSelectAtIndex:index];
 }
 
-#pragma YRSegmentCollectionSelectorViewDataSource, YRSegmentCollectionSelectorViewDelegate
+#pragma STSegmentCollectionSelectorViewDataSource, STSegmentCollectionSelectorViewDelegate
 
-- (NSUInteger)numberOfItemsInSelectorView:(YRSegmentCollectionSelectorView *)selectorView;{
+- (NSUInteger)numberOfItemsInSelectorView:(STSegmentCollectionSelectorView *)selectorView;{
     return [self numberOfItems];
 }
 
-- (void)selectorView:(YRSegmentCollectionSelectorView *)selectorView configurateCellAtIndex:(NSUInteger)index cell:(YRSegmentCollectionItemCell *)cell;{
+- (void)selectorView:(STSegmentCollectionSelectorView *)selectorView configurateCellAtIndex:(NSUInteger)index cell:(STSegmentCollectionItemCell *)cell;{
     cell.title = [self titleAtIndex:index];
 }
 
-- (void)selectorView:(YRSegmentCollectionSelectorView *)selectorView didSelectRowAtIndex:(NSUInteger)index;{
+- (void)selectorView:(STSegmentCollectionSelectorView *)selectorView didSelectRowAtIndex:(NSUInteger)index;{
     [[self horizontalListView] selectCellAtIndex:index animated:YES];
     [self didSelectAtIndex:index];
     
     [self _updateCategoryOverlayerDisplay:NO];
 }
 
-- (void)didCancelInSelectorView:(YRSegmentCollectionSelectorView *)selectorView;{
+- (void)didCancelInSelectorView:(STSegmentCollectionSelectorView *)selectorView;{
     [self _updateCategoryOverlayerDisplay:NO];
 }
 

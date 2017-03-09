@@ -1,9 +1,9 @@
 //
 //  ViewController.m
-//  pyyx
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/3.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
 #import <Masonry/Masonry.h>
@@ -55,7 +55,7 @@
 }
 
 - (void)loadAtItemIndex:(NSUInteger)itemIndex append:(BOOL)append completion:(void (^)(NSArray *dataSource, NSUInteger page, BOOL hasMore))completion;{
-    YRSlideScaleTitleModel *model = [self dataSource][itemIndex];
+    STSlideScaleTitleModel *model = [self dataSource][itemIndex];
     NSString *category = [self categories][itemIndex];
     
     [self _mockDetailWithCategoryID:category append:append currentPage:[model page] completion:completion];
@@ -82,7 +82,7 @@
 - (void)didSelectAtItemIndex:(NSUInteger)itemIndex dataIndex:(NSUInteger)dataIndex;{
     [super didSelectAtItemIndex:itemIndex dataIndex:dataIndex];
  
-    YRSlideScaleTitleModel *slideScaleTitleModel = [self dataSource][itemIndex];
+    STSlideScaleTitleModel *slideScaleTitleModel = [self dataSource][itemIndex];
     id object = [slideScaleTitleModel dataSource][dataIndex];
 }
 
@@ -134,7 +134,7 @@
 - (NSArray *)dataSourceWithCategories:(NSArray *)categories;{
     NSMutableArray *dataSource = [NSMutableArray array];
     for (NSString * category in categories) {
-        YRSlideScaleTitleModel *model = [YRSlideScaleTitleModel new];
+        STSlideScaleTitleModel *model = [STSlideScaleTitleModel new];
         model.title = category;
         
         [dataSource addObject:model];

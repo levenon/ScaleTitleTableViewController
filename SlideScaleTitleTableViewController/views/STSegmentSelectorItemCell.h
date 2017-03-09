@@ -1,14 +1,14 @@
 //
-//  YRSegmentSelectorItemCell.h
-//  pyyx
+//  STSegmentSelectorItemCell.h
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/4.
+//  Created by Marke Jave on 2017/1/4.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 #import "MMHorizontalListViewCell.h"
 
 @class MMHorizontalListView;
-@interface YRSegmentSelectorItemCell : MMHorizontalListViewCell
+@interface STSegmentSelectorItemCell : MMHorizontalListViewCell
 
 @property (nonatomic, strong) NSString *title;
 

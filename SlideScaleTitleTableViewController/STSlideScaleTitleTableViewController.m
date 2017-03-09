@@ -1,16 +1,16 @@
 //
-//  YRSlideScaleTitleTableViewController.m
-//  pyyx
+//  STSlideScaleTitleTableViewController.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/3.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
-#import "YRSlideScaleTitleTableViewController.h"
+#import "STSlideScaleTitleTableViewController.h"
 
-const CGFloat YRSegmentScaleTitleViewHeight = 146;
+const CGFloat STSegmentScaleTitleViewHeight = 146;
 
-@implementation YRSlideScaleTitleModel
+@implementation STSlideScaleTitleModel
 
 - (instancetype)init{
     if (self = [super init]) {
@@ -29,13 +29,13 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
 
 @end
 
-@interface YRSlideScaleTitleTableViewController ()<UIScrollViewDelegate>
+@interface STSlideScaleTitleTableViewController ()<UIScrollViewDelegate>
 
 @property (nonatomic, strong) UIView *backgroundView;
 
-@property (nonatomic, strong) YRSegmentScaleTitleView * titleView;
+@property (nonatomic, strong) STSegmentScaleTitleView * titleView;
 
-@property (nonatomic, strong) YRSlideScaleCarousel *containerView;
+@property (nonatomic, strong) STSlideScaleCarousel *containerView;
 
 @property (nonatomic, assign) UITableViewStyle style;
 
@@ -43,7 +43,7 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
 
 @end
 
-@implementation YRSlideScaleTitleTableViewController
+@implementation STSlideScaleTitleTableViewController
 
 - (instancetype)initWithStyle:(UITableViewStyle)style;{
     if (self = [self init]) {
@@ -99,8 +99,8 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
 #pragma mark - private
 
 - (void)_refreshCurrentItemViewIfNeeds{
-    YRSlideScaleCarouselItemView *itemView = (YRSlideScaleCarouselItemView *)[[self containerView] itemViewAtIndex:[self currentIndex]];
-    YRSlideScaleTitleModel *model = [self dataSourceEnable] ? [self dataSource][[self currentIndex]] : nil;
+    STSlideScaleCarouselItemView *itemView = (STSlideScaleCarouselItemView *)[[self containerView] itemViewAtIndex:[self currentIndex]];
+    STSlideScaleTitleModel *model = [self dataSourceEnable] ? [self dataSource][[self currentIndex]] : nil;
     if (itemView && model && ![[model dataSource] ?: @[] count] && [model hasMore]) {
         [itemView refresh];
     } else if (itemView && model && [[model dataSource] ?: @[] count]) {
@@ -134,12 +134,12 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     return _backgroundView;
 }
 
-- (YRSegmentScaleTitleView *)titleView{
+- (STSegmentScaleTitleView *)titleView{
     if (!_titleView) {
-        _titleView = [[YRSegmentScaleTitleView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[self view] bounds]), YRSegmentScaleTitleViewHeight)];
+        _titleView = [[STSegmentScaleTitleView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[self view] bounds]), STSegmentScaleTitleViewHeight)];
         _titleView.backgroundColor = [UIColor clearColor];
-        _titleView.minHeight = YRSegmentScaleTitleViewHeight;
-        _titleView.maxHeight = YRSegmentScaleTitleViewHeight;
+        _titleView.minHeight = STSegmentScaleTitleViewHeight;
+        _titleView.maxHeight = STSegmentScaleTitleViewHeight;
         
         _titleView.scaleTitleView.titleLabel.text = [self title];
         _titleView.scaleTitleView.backgroundColor = [UIColor clearColor];
@@ -153,9 +153,9 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     return _titleView;
 }
 
-- (YRSlideScaleCarousel *)containerView{
+- (STSlideScaleCarousel *)containerView{
     if (!_containerView) {
-        _containerView = [[YRSlideScaleCarousel alloc] initWithFrame:CGRectMake(0, YRSegmentScaleTitleViewHeight, CGRectGetWidth([[self view] bounds]), CGRectGetHeight([[self view] bounds]) - YRSegmentScaleTitleViewHeight)];
+        _containerView = [[STSlideScaleCarousel alloc] initWithFrame:CGRectMake(0, STSegmentScaleTitleViewHeight, CGRectGetWidth([[self view] bounds]), CGRectGetHeight([[self view] bounds]) - STSegmentScaleTitleViewHeight)];
         _containerView.bounces = NO;
         _containerView.delegate = self;
         _containerView.dataSource = self;
@@ -166,15 +166,15 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     return _containerView;
 }
 
-- (NSArray<YRSlideScaleTitleModel *> *)dataSource{
+- (NSArray<STSlideScaleTitleModel *> *)dataSource{
     if (!_dataSource) {
         _dataSource = @[];
     }
     return _dataSource;
 }
 
-- (YRSlideScaleCarouselItemView *)carousel:(iCarousel *)carousel itemViewAtIndex:(NSUInteger)index{
-    YRSlideScaleCarouselItemView *itemView = [[YRSlideScaleCarouselItemView alloc] initWithFrame:[carousel bounds]];
+- (STSlideScaleCarouselItemView *)carousel:(iCarousel *)carousel itemViewAtIndex:(NSUInteger)index{
+    STSlideScaleCarouselItemView *itemView = [[STSlideScaleCarouselItemView alloc] initWithFrame:[carousel bounds]];
     
     itemView.delegate = self;
     itemView.allowRefresh = YES;
@@ -204,8 +204,8 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     return [[self dataSource] count];
 }
 
-- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(YRSlideScaleCarouselItemView *)view;{
-    YRSlideScaleTitleModel *model = [self dataSource][index];
+- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(STSlideScaleCarouselItemView *)view;{
+    STSlideScaleTitleModel *model = [self dataSource][index];
     if (!view) {
         view = [self carousel:carousel itemViewAtIndex:index];
     } else {
@@ -245,28 +245,28 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     }
 }
 
-#pragma mark - YRSlideScaleCarouselItemViewDelegate
+#pragma mark - STSlideScaleCarouselItemViewDelegate
 
-- (CGFloat)slideScaleCarouselItemView:(YRSlideScaleCarouselItemView *)slideScaleCarouselItemView tableView:(UITableView *)tableView heightForCellAtIndex:(NSUInteger)index;{
+- (CGFloat)slideScaleCarouselItemView:(STSlideScaleCarouselItemView *)slideScaleCarouselItemView tableView:(UITableView *)tableView heightForCellAtIndex:(NSUInteger)index;{
     NSUInteger itemIndex = [[self containerView] indexOfItemView:slideScaleCarouselItemView];
     return [self tableView:tableView itemIndex:itemIndex heightForCellAtIndex:index];
 }
 
-- (UITableViewCell *)slideScaleCarouselItemView:(YRSlideScaleCarouselItemView *)slideScaleCarouselItemView tableView:(UITableView *)tableView  cellAtIndex:(NSUInteger)index;{
+- (UITableViewCell *)slideScaleCarouselItemView:(STSlideScaleCarouselItemView *)slideScaleCarouselItemView tableView:(UITableView *)tableView  cellAtIndex:(NSUInteger)index;{
     NSUInteger itemIndex = [[self containerView] indexOfItemView:slideScaleCarouselItemView];
     
     return [self tableView:tableView itemIndex:itemIndex cellAtIndex:index];
 }
 
-- (void)slideScaleCarouselItemView:(YRSlideScaleCarouselItemView *)slideScaleCarouselItemView didSelectAtIndex:(NSUInteger)index;{
+- (void)slideScaleCarouselItemView:(STSlideScaleCarouselItemView *)slideScaleCarouselItemView didSelectAtIndex:(NSUInteger)index;{
     NSUInteger itemIndex = [[self containerView] indexOfItemView:slideScaleCarouselItemView];
     
     [self didSelectAtItemIndex:itemIndex dataIndex:index];
 }
 
-- (void)slideScaleCarouselItemView:(YRSlideScaleCarouselItemView *)slideScaleCarouselItemView refreshCompletion:(void (^)(NSArray *dataSource, BOOL hasMore))refreshCompletion;{
+- (void)slideScaleCarouselItemView:(STSlideScaleCarouselItemView *)slideScaleCarouselItemView refreshCompletion:(void (^)(NSArray *dataSource, BOOL hasMore))refreshCompletion;{
     NSUInteger itemIndex = [[self containerView] indexOfItemView:slideScaleCarouselItemView];
-    YRSlideScaleTitleModel *model = [self dataSource][itemIndex];
+    STSlideScaleTitleModel *model = [self dataSource][itemIndex];
     
     [self loadAtItemIndex:itemIndex append:NO completion:^(NSArray *dataSource, NSUInteger page, BOOL hasMore) {
         model.dataSource = dataSource;
@@ -279,9 +279,9 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     }];
 }
 
-- (void)slideScaleCarouselItemView:(YRSlideScaleCarouselItemView *)slideScaleCarouselItemView loadMoreCompletion:(void (^)(NSArray *dataSource, BOOL hasMore))loadMoreCompletion;{
+- (void)slideScaleCarouselItemView:(STSlideScaleCarouselItemView *)slideScaleCarouselItemView loadMoreCompletion:(void (^)(NSArray *dataSource, BOOL hasMore))loadMoreCompletion;{
     NSUInteger itemIndex = [[self containerView] indexOfItemView:slideScaleCarouselItemView];
-    YRSlideScaleTitleModel *model = [self dataSource][itemIndex];
+    STSlideScaleTitleModel *model = [self dataSource][itemIndex];
     
     [self loadAtItemIndex:itemIndex append:YES completion:^(NSArray *dataSource, NSUInteger page, BOOL hasMore) {
         model.dataSource = [[model dataSource] arrayByAddingObjectsFromArray:dataSource];
@@ -294,22 +294,22 @@ const CGFloat YRSegmentScaleTitleViewHeight = 146;
     }];
 }
 
-#pragma mark - YRSegmentSelectorViewDelegate
+#pragma mark - STSegmentSelectorViewDelegate
 
-- (NSUInteger)numberOfItemsInSelector:(YRSegmentSelectorView *)selector;{
+- (NSUInteger)numberOfItemsInSelector:(STSegmentSelectorView *)selector;{
     return [[self dataSource] count];
 }
 
-- (UIView *)containerViewForExpendInSelector:(YRSegmentSelectorView *)selector;{
+- (UIView *)containerViewForExpendInSelector:(STSegmentSelectorView *)selector;{
     return [self view];
 }
 
-- (NSString *)selector:(YRSegmentSelectorView *)selector titleAtIndex:(NSUInteger)index;{
-    YRSlideScaleTitleModel *model = [self dataSource][index];
+- (NSString *)selector:(STSegmentSelectorView *)selector titleAtIndex:(NSUInteger)index;{
+    STSlideScaleTitleModel *model = [self dataSource][index];
     return [model title];
 }
 
-- (void)selector:(YRSegmentSelectorView *)selector didSelectAtIndex:(NSUInteger)index;{
+- (void)selector:(STSegmentSelectorView *)selector didSelectAtIndex:(NSUInteger)index;{
     _currentIndex = index;
     
     [[self containerView] scrollToItemAtIndex:index animated:YES];

@@ -1,13 +1,13 @@
 //
 //  ViewController.h
-//  pyyx
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
+//  Created by Marke Jave on 2017/1/3.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSlideScaleTitleTableViewController.h"
+#import "STSlideScaleTitleTableViewController.h"
 
-@interface ViewController : YRSlideScaleTitleTableViewController
+@interface ViewController : STSlideScaleTitleTableViewController
 
 @end

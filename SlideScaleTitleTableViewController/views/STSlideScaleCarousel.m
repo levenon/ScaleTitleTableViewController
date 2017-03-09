@@ -1,20 +1,20 @@
 //
-//  YRSlideScaleCarousel.m
-//  pyyx
+//  STSlideScaleCarousel.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/2/10.
+//  Created by Marke Jave on 2017/2/10.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSlideScaleCarousel.h"
+#import "STSlideScaleCarousel.h"
 
-@interface YRSlideScaleCarousel ()
+@interface STSlideScaleCarousel ()
 
 @property (nonatomic, strong) NSMutableDictionary *itemViews;
 
 @end
 
-@implementation YRSlideScaleCarousel
+@implementation STSlideScaleCarousel
 @dynamic itemViews;
 
 - (void)layoutSubviews{

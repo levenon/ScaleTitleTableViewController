@@ -1,22 +1,22 @@
 //
-//  YRSlideScaleCarouselItemView.m
-//  pyyx
+//  STSlideScaleCarouselItemView.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/4.
+//  Created by Marke Jave on 2017/1/4.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSlideScaleCarouselItemView.h"
+#import "STSlideScaleCarouselItemView.h"
 #import <Masonry/Masonry.h>
 #import <MJRefresh/MJRefresh.h>
 
-@interface YRSlideScaleCarouselItemView ()
+@interface STSlideScaleCarouselItemView ()
 
 @property (nonatomic, strong) UITableView *tableView;
 
 @end
 
-@implementation YRSlideScaleCarouselItemView{
+@implementation STSlideScaleCarouselItemView{
     NSArray *_dataSource;
 }
 

@@ -1,21 +1,21 @@
 //
-//  YRSegmentCollectionItemCell.m
-//  pyyx
+//  STSegmentCollectionItemCell.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/4.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/4.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
-#import "YRSegmentCollectionItemCell.h"
+#import "STSegmentCollectionItemCell.h"
 
-@interface YRSegmentCollectionItemCell ()
+@interface STSegmentCollectionItemCell ()
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
 
-@implementation YRSegmentCollectionItemCell
+@implementation STSegmentCollectionItemCell
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {

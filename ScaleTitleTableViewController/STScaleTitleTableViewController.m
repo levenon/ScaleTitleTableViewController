@@ -1,17 +1,17 @@
 //
-//  YRScaleTitleTableViewController.m
-//  pyyx
+//  STScaleTitleTableViewController.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/3.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
-#import "YRScaleTitleTableViewController.h"
-#import "YRScaleTitleView.h"
+#import "STScaleTitleTableViewController.h"
+#import "STScaleTitleView.h"
 
-@interface YRScaleTitleTableViewController ()<UIScrollViewDelegate>
+@interface STScaleTitleTableViewController ()<UIScrollViewDelegate>
 
-@property (nonatomic, strong) YRScaleTitleView * titleView;
+@property (nonatomic, strong) STScaleTitleView * titleView;
 
 @property (nonatomic, assign, readonly) UITableViewStyle style;
 
@@ -19,7 +19,7 @@
 
 @end
 
-@implementation YRScaleTitleTableViewController
+@implementation STScaleTitleTableViewController
 @dynamic tableView, style;
 
 - (instancetype)init{
@@ -45,9 +45,9 @@
 
 #pragma mark - accessor
 
-- (YRScaleTitleView *)titleView{
+- (STScaleTitleView *)titleView{
     if (!_titleView) {
-        _titleView = [[YRScaleTitleView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[self view] bounds]), 79)];
+        _titleView = [[STScaleTitleView alloc] initWithFrame:CGRectMake(0, 0, CGRectGetWidth([[self view] bounds]), 79)];
         _titleView.autoresizing = YES;
         _titleView.minHeight = 79;
         _titleView.maxHeight = 109;

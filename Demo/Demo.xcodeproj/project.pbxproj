@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		083219331E70F5CA00C26390 /* YRSegmentScaleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219231E70F5CA00C26390 /* YRSegmentScaleTitleView.m */; };
-		083219341E70F5CA00C26390 /* YRSegmentCollectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219261E70F5CA00C26390 /* YRSegmentCollectionItemCell.m */; };
-		083219351E70F5CA00C26390 /* YRSegmentCollectionSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219281E70F5CA00C26390 /* YRSegmentCollectionSelectorView.m */; };
-		083219361E70F5CA00C26390 /* YRSegmentSelectorItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192A1E70F5CA00C26390 /* YRSegmentSelectorItemCell.m */; };
-		083219371E70F5CA00C26390 /* YRSegmentSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192C1E70F5CA00C26390 /* YRSegmentSelectorView.m */; };
-		083219381E70F5CA00C26390 /* YRSlideScaleCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192E1E70F5CA00C26390 /* YRSlideScaleCarousel.m */; };
-		083219391E70F5CA00C26390 /* YRSlideScaleCarouselItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219301E70F5CA00C26390 /* YRSlideScaleCarouselItemView.m */; };
-		0832193A1E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219321E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.m */; };
+		083219331E70F5CA00C26390 /* STSegmentScaleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219231E70F5CA00C26390 /* STSegmentScaleTitleView.m */; };
+		083219341E70F5CA00C26390 /* STSegmentCollectionItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219261E70F5CA00C26390 /* STSegmentCollectionItemCell.m */; };
+		083219351E70F5CA00C26390 /* STSegmentCollectionSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219281E70F5CA00C26390 /* STSegmentCollectionSelectorView.m */; };
+		083219361E70F5CA00C26390 /* STSegmentSelectorItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192A1E70F5CA00C26390 /* STSegmentSelectorItemCell.m */; };
+		083219371E70F5CA00C26390 /* STSegmentSelectorView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192C1E70F5CA00C26390 /* STSegmentSelectorView.m */; };
+		083219381E70F5CA00C26390 /* STSlideScaleCarousel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832192E1E70F5CA00C26390 /* STSlideScaleCarousel.m */; };
+		083219391E70F5CA00C26390 /* STSlideScaleCarouselItemView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219301E70F5CA00C26390 /* STSlideScaleCarouselItemView.m */; };
+		0832193A1E70F5CA00C26390 /* STSlideScaleTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219321E70F5CA00C26390 /* STSlideScaleTitleTableViewController.m */; };
 		083219411E70F5D100C26390 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0832193F1E70F5D100C26390 /* ViewController.m */; };
 		083219471E70F6B000C26390 /* MMHorizontalListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219441E70F6B000C26390 /* MMHorizontalListView.m */; };
 		083219481E70F6B000C26390 /* MMHorizontalListViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 083219461E70F6B000C26390 /* MMHorizontalListViewCell.m */; };
@@ -25,35 +25,35 @@
 		08F356501E6E6400000D624C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F3564F1E6E6400000D624C /* AppDelegate.m */; };
 		08F356581E6E6400000D624C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F356571E6E6400000D624C /* Assets.xcassets */; };
 		08F3565B1E6E6400000D624C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F356591E6E6400000D624C /* LaunchScreen.storyboard */; };
-		08F356681E6E6418000D624C /* YRScaleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F356651E6E6418000D624C /* YRScaleTitleView.m */; };
-		08F356691E6E6418000D624C /* YRScaleTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F356671E6E6418000D624C /* YRScaleTitleTableViewController.m */; };
+		08F356681E6E6418000D624C /* STScaleTitleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F356651E6E6418000D624C /* STScaleTitleView.m */; };
+		08F356691E6E6418000D624C /* STScaleTitleTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F356671E6E6418000D624C /* STScaleTitleTableViewController.m */; };
 		183810CAB112F45F8355F2A0 /* Pods_demo_targets_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D379EB650C1DE5E76B63ECAB /* Pods_demo_targets_Demo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		083219221E70F5CA00C26390 /* YRSegmentScaleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSegmentScaleTitleView.h; sourceTree = "<group>"; };
-		083219231E70F5CA00C26390 /* YRSegmentScaleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSegmentScaleTitleView.m; sourceTree = "<group>"; };
-		083219251E70F5CA00C26390 /* YRSegmentCollectionItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSegmentCollectionItemCell.h; sourceTree = "<group>"; };
-		083219261E70F5CA00C26390 /* YRSegmentCollectionItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSegmentCollectionItemCell.m; sourceTree = "<group>"; };
-		083219271E70F5CA00C26390 /* YRSegmentCollectionSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSegmentCollectionSelectorView.h; sourceTree = "<group>"; };
-		083219281E70F5CA00C26390 /* YRSegmentCollectionSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSegmentCollectionSelectorView.m; sourceTree = "<group>"; };
-		083219291E70F5CA00C26390 /* YRSegmentSelectorItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSegmentSelectorItemCell.h; sourceTree = "<group>"; };
-		0832192A1E70F5CA00C26390 /* YRSegmentSelectorItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSegmentSelectorItemCell.m; sourceTree = "<group>"; };
-		0832192B1E70F5CA00C26390 /* YRSegmentSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSegmentSelectorView.h; sourceTree = "<group>"; };
-		0832192C1E70F5CA00C26390 /* YRSegmentSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSegmentSelectorView.m; sourceTree = "<group>"; };
-		0832192D1E70F5CA00C26390 /* YRSlideScaleCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSlideScaleCarousel.h; sourceTree = "<group>"; };
-		0832192E1E70F5CA00C26390 /* YRSlideScaleCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSlideScaleCarousel.m; sourceTree = "<group>"; };
-		0832192F1E70F5CA00C26390 /* YRSlideScaleCarouselItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSlideScaleCarouselItemView.h; sourceTree = "<group>"; };
-		083219301E70F5CA00C26390 /* YRSlideScaleCarouselItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSlideScaleCarouselItemView.m; sourceTree = "<group>"; };
-		083219311E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRSlideScaleTitleTableViewController.h; sourceTree = "<group>"; };
-		083219321E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRSlideScaleTitleTableViewController.m; sourceTree = "<group>"; };
+		083219221E70F5CA00C26390 /* STSegmentScaleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentScaleTitleView.h; sourceTree = "<group>"; };
+		083219231E70F5CA00C26390 /* STSegmentScaleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentScaleTitleView.m; sourceTree = "<group>"; };
+		083219251E70F5CA00C26390 /* STSegmentCollectionItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentCollectionItemCell.h; sourceTree = "<group>"; };
+		083219261E70F5CA00C26390 /* STSegmentCollectionItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentCollectionItemCell.m; sourceTree = "<group>"; };
+		083219271E70F5CA00C26390 /* STSegmentCollectionSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentCollectionSelectorView.h; sourceTree = "<group>"; };
+		083219281E70F5CA00C26390 /* STSegmentCollectionSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentCollectionSelectorView.m; sourceTree = "<group>"; };
+		083219291E70F5CA00C26390 /* STSegmentSelectorItemCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentSelectorItemCell.h; sourceTree = "<group>"; };
+		0832192A1E70F5CA00C26390 /* STSegmentSelectorItemCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentSelectorItemCell.m; sourceTree = "<group>"; };
+		0832192B1E70F5CA00C26390 /* STSegmentSelectorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSegmentSelectorView.h; sourceTree = "<group>"; };
+		0832192C1E70F5CA00C26390 /* STSegmentSelectorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSegmentSelectorView.m; sourceTree = "<group>"; };
+		0832192D1E70F5CA00C26390 /* STSlideScaleCarousel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSlideScaleCarousel.h; sourceTree = "<group>"; };
+		0832192E1E70F5CA00C26390 /* STSlideScaleCarousel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSlideScaleCarousel.m; sourceTree = "<group>"; };
+		0832192F1E70F5CA00C26390 /* STSlideScaleCarouselItemView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSlideScaleCarouselItemView.h; sourceTree = "<group>"; };
+		083219301E70F5CA00C26390 /* STSlideScaleCarouselItemView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSlideScaleCarouselItemView.m; sourceTree = "<group>"; };
+		083219311E70F5CA00C26390 /* STSlideScaleTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STSlideScaleTitleTableViewController.h; sourceTree = "<group>"; };
+		083219321E70F5CA00C26390 /* STSlideScaleTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STSlideScaleTitleTableViewController.m; sourceTree = "<group>"; };
 		0832193E1E70F5D100C26390 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		0832193F1E70F5D100C26390 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		083219431E70F6B000C26390 /* MMHorizontalListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHorizontalListView.h; sourceTree = "<group>"; };
 		083219441E70F6B000C26390 /* MMHorizontalListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHorizontalListView.m; sourceTree = "<group>"; };
 		083219451E70F6B000C26390 /* MMHorizontalListViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMHorizontalListViewCell.h; sourceTree = "<group>"; };
 		083219461E70F6B000C26390 /* MMHorizontalListViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMHorizontalListViewCell.m; sourceTree = "<group>"; };
-		0832194A1E70F79F00C26390 /* YRTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRTableViewController.h; sourceTree = "<group>"; };
+		0832194A1E70F79F00C26390 /* STTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STTableViewController.h; sourceTree = "<group>"; };
 		0832194B1E70F79F00C26390 /* YRTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRTableViewController.m; sourceTree = "<group>"; };
 		08B1D6B61E710B13005F6A78 /* DemoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DemoTableViewCell.h; sourceTree = "<group>"; };
 		08B1D6B71E710B13005F6A78 /* DemoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DemoTableViewCell.m; sourceTree = "<group>"; };
@@ -66,10 +66,10 @@
 		08F356571E6E6400000D624C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08F3565A1E6E6400000D624C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08F3565C1E6E6400000D624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08F356641E6E6418000D624C /* YRScaleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRScaleTitleView.h; sourceTree = "<group>"; };
-		08F356651E6E6418000D624C /* YRScaleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRScaleTitleView.m; sourceTree = "<group>"; };
-		08F356661E6E6418000D624C /* YRScaleTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRScaleTitleTableViewController.h; sourceTree = "<group>"; };
-		08F356671E6E6418000D624C /* YRScaleTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRScaleTitleTableViewController.m; sourceTree = "<group>"; };
+		08F356641E6E6418000D624C /* STScaleTitleView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScaleTitleView.h; sourceTree = "<group>"; };
+		08F356651E6E6418000D624C /* STScaleTitleView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScaleTitleView.m; sourceTree = "<group>"; };
+		08F356661E6E6418000D624C /* STScaleTitleTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STScaleTitleTableViewController.h; sourceTree = "<group>"; };
+		08F356671E6E6418000D624C /* STScaleTitleTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STScaleTitleTableViewController.m; sourceTree = "<group>"; };
 		D379EB650C1DE5E76B63ECAB /* Pods_demo_targets_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_demo_targets_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7E5F344412E50D51C29B160 /* Pods-demo_targets-Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_targets-Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-demo_targets-Demo/Pods-demo_targets-Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		EE21149DD362D6C8FD102CEF /* Pods-demo_targets-Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-demo_targets-Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-demo_targets-Demo/Pods-demo_targets-Demo.release.xcconfig"; sourceTree = "<group>"; };
@@ -92,8 +92,8 @@
 			children = (
 				083219211E70F5CA00C26390 /* TitleView */,
 				083219241E70F5CA00C26390 /* views */,
-				083219311E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.h */,
-				083219321E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.m */,
+				083219311E70F5CA00C26390 /* STSlideScaleTitleTableViewController.h */,
+				083219321E70F5CA00C26390 /* STSlideScaleTitleTableViewController.m */,
 			);
 			name = SlideScaleTitleTableViewController;
 			path = ../../SlideScaleTitleTableViewController;
@@ -102,8 +102,8 @@
 		083219211E70F5CA00C26390 /* TitleView */ = {
 			isa = PBXGroup;
 			children = (
-				083219221E70F5CA00C26390 /* YRSegmentScaleTitleView.h */,
-				083219231E70F5CA00C26390 /* YRSegmentScaleTitleView.m */,
+				083219221E70F5CA00C26390 /* STSegmentScaleTitleView.h */,
+				083219231E70F5CA00C26390 /* STSegmentScaleTitleView.m */,
 			);
 			path = TitleView;
 			sourceTree = "<group>";
@@ -111,18 +111,18 @@
 		083219241E70F5CA00C26390 /* views */ = {
 			isa = PBXGroup;
 			children = (
-				083219251E70F5CA00C26390 /* YRSegmentCollectionItemCell.h */,
-				083219261E70F5CA00C26390 /* YRSegmentCollectionItemCell.m */,
-				083219271E70F5CA00C26390 /* YRSegmentCollectionSelectorView.h */,
-				083219281E70F5CA00C26390 /* YRSegmentCollectionSelectorView.m */,
-				083219291E70F5CA00C26390 /* YRSegmentSelectorItemCell.h */,
-				0832192A1E70F5CA00C26390 /* YRSegmentSelectorItemCell.m */,
-				0832192B1E70F5CA00C26390 /* YRSegmentSelectorView.h */,
-				0832192C1E70F5CA00C26390 /* YRSegmentSelectorView.m */,
-				0832192D1E70F5CA00C26390 /* YRSlideScaleCarousel.h */,
-				0832192E1E70F5CA00C26390 /* YRSlideScaleCarousel.m */,
-				0832192F1E70F5CA00C26390 /* YRSlideScaleCarouselItemView.h */,
-				083219301E70F5CA00C26390 /* YRSlideScaleCarouselItemView.m */,
+				083219251E70F5CA00C26390 /* STSegmentCollectionItemCell.h */,
+				083219261E70F5CA00C26390 /* STSegmentCollectionItemCell.m */,
+				083219271E70F5CA00C26390 /* STSegmentCollectionSelectorView.h */,
+				083219281E70F5CA00C26390 /* STSegmentCollectionSelectorView.m */,
+				083219291E70F5CA00C26390 /* STSegmentSelectorItemCell.h */,
+				0832192A1E70F5CA00C26390 /* STSegmentSelectorItemCell.m */,
+				0832192B1E70F5CA00C26390 /* STSegmentSelectorView.h */,
+				0832192C1E70F5CA00C26390 /* STSegmentSelectorView.m */,
+				0832192D1E70F5CA00C26390 /* STSlideScaleCarousel.h */,
+				0832192E1E70F5CA00C26390 /* STSlideScaleCarousel.m */,
+				0832192F1E70F5CA00C26390 /* STSlideScaleCarouselItemView.h */,
+				083219301E70F5CA00C26390 /* STSlideScaleCarouselItemView.m */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -142,7 +142,7 @@
 		083219491E70F79F00C26390 /* TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				0832194A1E70F79F00C26390 /* YRTableViewController.h */,
+				0832194A1E70F79F00C26390 /* STTableViewController.h */,
 				0832194B1E70F79F00C26390 /* YRTableViewController.m */,
 			);
 			name = TableViewController;
@@ -202,8 +202,8 @@
 			isa = PBXGroup;
 			children = (
 				08F356631E6E6418000D624C /* TitleView */,
-				08F356661E6E6418000D624C /* YRScaleTitleTableViewController.h */,
-				08F356671E6E6418000D624C /* YRScaleTitleTableViewController.m */,
+				08F356661E6E6418000D624C /* STScaleTitleTableViewController.h */,
+				08F356671E6E6418000D624C /* STScaleTitleTableViewController.m */,
 			);
 			name = ScaleTitleTableViewController;
 			path = ../../ScaleTitleTableViewController;
@@ -212,8 +212,8 @@
 		08F356631E6E6418000D624C /* TitleView */ = {
 			isa = PBXGroup;
 			children = (
-				08F356641E6E6418000D624C /* YRScaleTitleView.h */,
-				08F356651E6E6418000D624C /* YRScaleTitleView.m */,
+				08F356641E6E6418000D624C /* STScaleTitleView.h */,
+				08F356651E6E6418000D624C /* STScaleTitleView.m */,
 			);
 			path = TitleView;
 			sourceTree = "<group>";
@@ -357,23 +357,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				083219481E70F6B000C26390 /* MMHorizontalListViewCell.m in Sources */,
-				083219381E70F5CA00C26390 /* YRSlideScaleCarousel.m in Sources */,
-				083219391E70F5CA00C26390 /* YRSlideScaleCarouselItemView.m in Sources */,
+				083219381E70F5CA00C26390 /* STSlideScaleCarousel.m in Sources */,
+				083219391E70F5CA00C26390 /* STSlideScaleCarouselItemView.m in Sources */,
 				08B1D6B81E710B13005F6A78 /* DemoTableViewCell.m in Sources */,
-				083219371E70F5CA00C26390 /* YRSegmentSelectorView.m in Sources */,
+				083219371E70F5CA00C26390 /* STSegmentSelectorView.m in Sources */,
 				0832194C1E70F79F00C26390 /* YRTableViewController.m in Sources */,
-				083219361E70F5CA00C26390 /* YRSegmentSelectorItemCell.m in Sources */,
+				083219361E70F5CA00C26390 /* STSegmentSelectorItemCell.m in Sources */,
 				083219471E70F6B000C26390 /* MMHorizontalListView.m in Sources */,
-				08F356681E6E6418000D624C /* YRScaleTitleView.m in Sources */,
-				083219341E70F5CA00C26390 /* YRSegmentCollectionItemCell.m in Sources */,
-				0832193A1E70F5CA00C26390 /* YRSlideScaleTitleTableViewController.m in Sources */,
+				08F356681E6E6418000D624C /* STScaleTitleView.m in Sources */,
+				083219341E70F5CA00C26390 /* STSegmentCollectionItemCell.m in Sources */,
+				0832193A1E70F5CA00C26390 /* STSlideScaleTitleTableViewController.m in Sources */,
 				08F356501E6E6400000D624C /* AppDelegate.m in Sources */,
 				083219411E70F5D100C26390 /* ViewController.m in Sources */,
 				08F3564D1E6E6400000D624C /* main.m in Sources */,
 				08B1D6BC1E71222A005F6A78 /* ScaleTitleViewController.m in Sources */,
-				08F356691E6E6418000D624C /* YRScaleTitleTableViewController.m in Sources */,
-				083219351E70F5CA00C26390 /* YRSegmentCollectionSelectorView.m in Sources */,
-				083219331E70F5CA00C26390 /* YRSegmentScaleTitleView.m in Sources */,
+				08F356691E6E6418000D624C /* STScaleTitleTableViewController.m in Sources */,
+				083219351E70F5CA00C26390 /* STSegmentCollectionSelectorView.m in Sources */,
+				083219331E70F5CA00C26390 /* STSegmentScaleTitleView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

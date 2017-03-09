@@ -1,14 +1,14 @@
 //
-//  YRTableViewController
-//  pyyx
+//  STTableViewController
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
+//  Created by Marke Jave on 2017/1/3.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRTableViewController.h"
+#import "STTableViewController.h"
 
-@interface YRTableViewController ()
+@interface STTableViewController ()
 
 @property (nonatomic, strong) IBOutlet UITableView *tableView;
 
@@ -16,7 +16,7 @@
 
 @end
 
-@implementation YRTableViewController{
+@implementation STTableViewController{
     NSArray *_sectionIndexTitles;
 }
 

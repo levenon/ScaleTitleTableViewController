@@ -1,16 +1,16 @@
 //
-//  YRSlideScaleTitleTableViewController.h
-//  pyyx
+//  STSlideScaleTitleTableViewController.h
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
+//  Created by Marke Jave on 2017/1/3.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSlideScaleCarouselItemView.h"
-#import "YRSegmentScaleTitleView.h"
-#import "YRSlideScaleCarousel.h"
+#import "STSlideScaleCarouselItemView.h"
+#import "STSegmentScaleTitleView.h"
+#import "STSlideScaleCarousel.h"
 
-@interface YRSlideScaleTitleModel : NSObject
+@interface STSlideScaleTitleModel : NSObject
 
 @property (nonatomic, strong) NSString *title;
 
@@ -22,22 +22,22 @@
 
 @end
 
-@interface YRSlideScaleTitleTableViewController : UIViewController<iCarouselDelegate, iCarouselDataSource, YRSlideScaleCarouselItemViewDelegate, YRSegmentSelectorViewDelegate, UIScrollViewDelegate>
+@interface STSlideScaleTitleTableViewController : UIViewController<iCarouselDelegate, iCarouselDataSource, STSlideScaleCarouselItemViewDelegate, STSegmentSelectorViewDelegate, UIScrollViewDelegate>
 
 - (instancetype)initWithStyle:(UITableViewStyle)style;
 
-@property (nonatomic, strong) NSArray<YRSlideScaleTitleModel *> *dataSource;
+@property (nonatomic, strong) NSArray<STSlideScaleTitleModel *> *dataSource;
 
 @property (nonatomic, assign) NSUInteger currentIndex;
 
 @property (nonatomic, strong, readonly) UIView *backgroundView;
 
-@property (nonatomic, strong, readonly) YRSlideScaleCarousel *containerView;
+@property (nonatomic, strong, readonly) STSlideScaleCarousel *containerView;
 
 // The default content-inset for tableView
 @property (nonatomic, assign, readonly) UIEdgeInsets contentInset;
 
-@property (nonatomic, strong, readonly) YRSegmentScaleTitleView * titleView;
+@property (nonatomic, strong, readonly) STSegmentScaleTitleView * titleView;
 
 - (void)initialize;
 

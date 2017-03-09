@@ -1,22 +1,22 @@
 //
-//  YRScaleTitleView.m
-//  pyyx
+//  STScaleTitleView.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/3.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/3.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
-#import "YRScaleTitleView.h"
+#import "STScaleTitleView.h"
 #import <Masonry/Masonry.h>
 
-@interface YRScaleTitleView ()
+@interface STScaleTitleView ()
 
 @property (nonatomic, strong) UILabel *titleLabel;
 @property (nonatomic, strong) UIView *rightContentView;
 
 @end
 
-@implementation YRScaleTitleView
+@implementation STScaleTitleView
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {

@@ -1,15 +1,15 @@
 //
-//  YRSegmentCollectionSelectorView.m
-//  pyyx
+//  STSegmentCollectionSelectorView.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/4.
+//  Created by Marke Jave on 2017/1/4.
 //  Copyright © 2017年 Chunlin Ma. All rights reserved.
 //
 
-#import "YRSegmentCollectionSelectorView.h"
+#import "STSegmentCollectionSelectorView.h"
 #import <Masonry/Masonry.h>
 
-@interface YRSegmentCollectionSelectorView ()<UICollectionViewDelegate, UICollectionViewDataSource>
+@interface STSegmentCollectionSelectorView ()<UICollectionViewDelegate, UICollectionViewDataSource>
 
 @property (nonatomic, assign) NSUInteger selectedIndex;
 @property (nonatomic, strong) NSMutableDictionary<NSString *, Class> *reusableCellClasses;
@@ -25,7 +25,7 @@
 
 @end
 
-@implementation YRSegmentCollectionSelectorView
+@implementation STSegmentCollectionSelectorView
 
 - (instancetype)initWithSelectedIndex:(NSUInteger)selectedIndex{
     if (self = [super init]) {

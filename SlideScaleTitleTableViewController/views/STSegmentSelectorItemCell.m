@@ -1,21 +1,21 @@
 //
-//  YRSegmentSelectorItemCell.m
-//  pyyx
+//  STSegmentSelectorItemCell.m
+//  Marke Jave
 //
-//  Created by xulinfeng on 2017/1/4.
-//  Copyright © 2017年 Chunlin Ma. All rights reserved.
+//  Created by Marke Jave on 2017/1/4.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
-#import "YRSegmentSelectorItemCell.h"
+#import "STSegmentSelectorItemCell.h"
 #import <Masonry/Masonry.h>
 
-@interface YRSegmentSelectorItemCell ()
+@interface STSegmentSelectorItemCell ()
 
 @property (nonatomic, strong) UILabel *titleLabel;
 
 @end
 
-@implementation YRSegmentSelectorItemCell
+@implementation STSegmentSelectorItemCell
 
 - (instancetype)initWithFrame:(CGRect)frame{
     if (self = [super initWithFrame:frame]) {

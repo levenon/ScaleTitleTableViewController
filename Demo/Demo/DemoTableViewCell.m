@@ -2,8 +2,8 @@
 //  DemoTableViewCell.m
 //  Demo
 //
-//  Created by xulinfeng on 2017/3/9.
-//  Copyright © 2017年 xulinfeng. All rights reserved.
+//  Created by Marke Jave on 2017/3/9.
+//  Copyright © 2017年 Marke Jave. All rights reserved.
 //
 
 #import "DemoTableViewCell.h"
