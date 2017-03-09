@@ -1,0 +1,15 @@
+source 'https://github.com/MarkeJave/Specs.git'
+source 'https://github.com/CocoaPods/Specs.git'
+inhibit_all_warnings!
+
+platform :ios, '8.0'
+use_frameworks!
+
+abstract_target ‘demo_targets' do
+    pod 'Masonry', '~> 1.0.1'
+    pod 'iCarousel', '~> 1.8.2'
+    pod 'MJRefresh', '~> 3.1.12'
+
+    target 'Demo' do
+    end
+end
